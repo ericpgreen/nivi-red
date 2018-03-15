@@ -1,0 +1,37 @@
+---
+title: "Developing a digital marketplace for family planning--Results of a pilot randomized encouragement trial"
+output:
+  html_document:
+    toc_float: true
+bibliography: refs.bib
+csl: vancouver.csl
+---
+
+# Metadata
+
+```{r, echo=FALSE}
+  tbl <- data.frame(Element=c("Paper Citation", 
+                              "Journal Copy", 
+                              "Pre-Print", 
+                              "Data Citation"),
+                    Details=c("Green, E.P., Augustine, A., & Naanyu, V. (2018). Developing a digital marketplace for family planning: Results of a pilot randomized encouragement trial",
+                              "Under review",
+                              "Under review",
+                              "Green, E.P. (2018). Nivi RED data repository. [![DOI](forthcoming)]()"))
+
+tbl %>%
+  kable("html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", 
+                                      "condensed", "responsive")) %>%
+  column_spec(1, width = "10em")
+```
+
+# Summary
+
+Comging soon
+
+# Key Take-Aways
+
+Coming soon
+
+# References

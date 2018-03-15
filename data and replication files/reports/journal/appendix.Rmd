@@ -1,0 +1,133 @@
+\newpage
+
+```{r, tbl-impact-noimpute, include=FALSE}
+  keep <- c("trt", "tried")
+  tbl_impact <-
+  stargazer(firstStage_fit1, anyFP_itt_fit2, anyFP_iv_fit2, 
+            se=list(cse(firstStage_fit1),
+                    cse(anyFP_itt_fit2),
+                    ivse(anyFP_iv_fit2)),
+            title="Impact on contraception adoption, sample limited to found at follow-up",
+            dep.var.caption = c(""),
+            dep.var.labels = c("\\textit{First stage}",
+                               "\\textit{ITT estimation}", 
+                               "\\textit{IV estimation}"),
+            column.labels = c("Tried intervention", 
+                              "Adopted contraception", 
+                              "Adopted contraception"),
+            #column.separate = c(),
+            model.names = FALSE,
+            multicolumn = FALSE,
+            covariate.labels = c("Assigned to treatment", 
+                                 "Tried intervention"),
+            omit.stat = c("rsq", "f", "adj.rsq", "ser"),
+            #df=FALSE, 
+            digits=2,
+            ci=TRUE, 
+            keep = keep,
+            add.lines = list(c("Mean in control group", 
+                               rd2(tried_c),
+                               rd2(anyFP_c), 
+                               ""),
+                             c("Includes controls",
+                               "Yes",
+                               "Yes",
+                               "Yes")),
+            label = "tbl-impact-noimpute",
+            notes = "",
+            notes.append = FALSE,
+            header = FALSE
+            )
+```
+
+```{r tbl-impact2-noimpute, results='asis'}
+  note.latex <- "\\multicolumn{4}{l} {\\parbox[t]{17cm}{ \\textit{Notes:} The first stage regression estimate (Column 1) is the coefficient on assignment to treatment from an OLS regression of intervention use on assignment. The intent-to-treat (ITT) estimate (Column 2) is the coefficient on assignment to treatment from an OLS regression of contraception adoption on assignment. The instrumental variables (IV) estimate (Column 3) is the coefficient on intervention use in a two-stage least squares regression of contraception adoption on assignment and intervention use. Controls include an indicator for mode of follow-up survey administration and several baseline characteristics, including: age, number of children born, and indicators for having attended post-secondary schooling, past use of family planning, being married or in a union, and nulligravida. Corrected Huber-White standard errors. \\\\ $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01}} \\\\"
+  tbl_impact[grepl("Note", tbl_impact)] <- note.latex
+  cat(tbl_impact, sep = "\n")
+```
+
+
+<!---
+the following two chunks should be turned off
+"manually" replacing placeholder values with output from Stata
+-->
+
+```{r, tbl-impact-probit, include=FALSE}
+  keep <- c("trt", "tried")
+  tbl_impact <-
+  stargazer(firstStage_fit3, 
+            anyFP_itt_fit3, 
+            anyFP_iv_fit1, # placeholder
+            se=list(cse(firstStage_fit3),
+                    cse(anyFP_itt_fit3),
+                    cse(anyFP_iv_fit1)),  # only a placeholder
+            title="Impact on contraception adoption, sample limited to found at follow-up",
+            dep.var.caption = c(""),
+            dep.var.labels = c("\\textit{First stage}",
+                               "\\textit{ITT estimation}", 
+                               "\\textit{IV estimation}"),
+            column.labels = c("Tried intervention", 
+                              "Adopted contraception", 
+                              "Adopted contraception"),
+            #column.separate = c(),
+            model.names = FALSE,
+            multicolumn = FALSE,
+            covariate.labels = c("Assigned to treatment", 
+                                 "Tried intervention"),
+            omit.stat = c("rsq", "f", "adj.rsq", "ser"),
+            #df=FALSE, 
+            digits=2,
+            ci=TRUE, 
+            keep = keep,
+            add.lines = list(c("Mean in control group", 
+                               rd2(tried_c),
+                               rd2(anyFP_c), 
+                               ""),
+                             c("Includes controls",
+                               "Yes",
+                               "Yes",
+                               "Yes")),
+            label = "tbl-impact-probit",
+            notes = "",
+            notes.append = FALSE,
+            header = FALSE
+            )
+```
+
+```{r tbl-impact2-probit, results='asis', eval=FALSE}
+  note.latex <- "\\multicolumn{4}{l} {\\parbox[t]{17cm}{ \\textit{Notes:} The first stage regression estimate (Column 1) is the coefficient on assignment to treatment from a probit regression of intervention use on assignment. The intent-to-treat (ITT) estimate (Column 2) is the coefficient on assignment to treatment from a probit regression of contraception adoption on assignment. The instrumental variables (IV) estimate (Column 3) is the coefficient on intervention use in a probit regression of contraception adoption on assignment and intervention use (run in Stata MP 12, Newey's two-step estimator). Controls include an indicator for mode of follow-up survey administration and several baseline characteristics, including: age, number of children born, and indicators for having attended post-secondary schooling, past use of family planning, being married or in a union, and nulligravida. \\\\ $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01}} \\\\"
+  tbl_impact[grepl("Note", tbl_impact)] <- note.latex
+  cat(tbl_impact, sep = "\n")
+```
+
+\begin{table}[!htbp] \centering 
+  \caption{Impact on contraception adoption, probit regression} 
+  \label{tbl-impact-probit} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+\\[-1.8ex] & \textit{First stage} & \textit{ITT estimation} & \textit{IV estimation} \\ 
+ & Tried intervention & Adopted contraception & Adopted contraception \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ Assigned to treatment & 1.71$^{***}$ & 0.68$^{**}$ &  \\ 
+  & (0.54, 2.89) & (0.03, 1.34) &  \\ 
+  & & & \\ 
+ Tried intervention &  &  & `r anyFP_iv_fit3_est` \\ 
+  &  &  & `r anyFP_iv_fit3_ci` \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Mean in control group & 0.02 & 0.43 &  \\ 
+Includes controls & Yes & Yes & Yes \\ 
+Observations & 112 & 112 & 112 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\multicolumn{4}{l} {\parbox[t]{17cm}{ \textit{Notes:} The first stage regression estimate (Column 1) is the coefficient on assignment to treatment from a probit regression of intervention use on assignment. The intent-to-treat (ITT) estimate (Column 2) is the coefficient on assignment to treatment from a probit regression of contraception adoption on assignment. The instrumental variables (IV) estimate (Column 3) is the coefficient on intervention use in a probit regression of contraception adoption on assignment and intervention use (run in Stata MP 12, Newey's two-step estimator). Controls include an indicator for mode of follow-up survey administration and several baseline characteristics, including: age, number of children born, and indicators for having attended post-secondary schooling, past use of family planning, being married or in a union, and nulligravida. \\ $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01}} \\
+\end{tabular} 
+\end{table} 
+
+\newpage
+
+\section{}
+
+\includepdf[pages={-}, angle=90]{../../resources/survey_instruments.pdf}
