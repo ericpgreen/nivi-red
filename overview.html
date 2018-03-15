@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Developing a digital marketplace for family planning–Results of a pilot randomized encouragement trial</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Nivi RED</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="overview.html">Overview</a>
+</li>
+<li>
+  <a href="team.html">Team</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Papers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="pilot.html">Pilot</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="https://github.com/ericpgreen/nivi-red/tree/master/data%20and%20replication%20files">
+    <span class="fa fa-external-link"></span>
+     
+    Data and Code
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:eric.green@duke.edu">
+    <span class="fa fa-envelope-o"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/ericpgreen/nivi-red">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Developing a digital marketplace for family planning–Results of a pilot randomized encouragement trial</h1>
+
+</div>
+
+
+<p><em>In 2017-18, our team of researchers from Duke University and Moi University began a pilot study funded by the Duke Global Health Institute to explore the feasibility of a full-scale of <a href="https://www.nivi.io/">Nivi</a>, a digital marketplace for family planning. We created this study website to store all study-related products and data (licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY license</a>). New material will be released as academic manuscripts enter production.</em></p>
+<hr />
+<p>Pregnancy exposes women to the risk of maternal death, and family planning is an effective tool for preventing death among women who do not want to become pregnant <span class="citation" data-cites="bongaarts:2012">[1]</span>. First, by preventing unintended pregnancies, contraception use reduces deaths caused by unsafe abortions. Second, contraception use leads to fewer high-risk pregnancies among adolescents and women over the age of 35. For the 12-month period ending July 2017, contraceptive use across 69 focal countries included in the global initiative FP2020 is estimated to have prevented 84 million unintended pregnancies, averted 26 million unsafe abortions, and saved 125,000 women from maternal deaths <span class="citation" data-cites="fp2020:2017">[2]</span>. Voluntary family planning has also been shown to improve newborn health outcomes, advance women’s empowerment, and bring socioeconomic benefits through reductions in fertility and population growth <span class="citation" data-cites="bongaarts:2012">[1]</span>.</p>
+<p>Yet among the populations that would benefit the most from family planning, uptake remains too low. In the five years that have passed since the FP2020 initiative launched at the London Summit on Family Planning in 2012, an additional 38.8 million women and girls across the 69 focal countries began using a modern method of contraception <span class="citation" data-cites="fp2020:2017">[2]</span>. This progress is above historic trends, but substantially off the pace required to meet the goal of adding 120 million new users by 2020. Across these focal countries, 1 out of every 5 married women of reproductive age would like to prevent or delay childbirth but is not using a modern method of contraception.</p>
+<p>This indicator is referred to as unmet need for modern contraception, and it represents a measure of access to family planning. In Kenya, for instance, 17.2% of currently married or in-union women of reproductive age <span class="citation" data-cites="kenyanationalbureauofstatistics:2015">[3]</span> and 26.4% of sexually active unmarried women <span class="citation" data-cites="kenyanationalbureauofstatistics:2014">[4]</span> have an unmet need for family planning. This translates into approximately 1.3 million women in the country who are not using contraception but say they would like to avoid pregnancy.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> According to the same nationally representative study, millions of others are either unaware of the potential benefits of contraception, misinformed about the full range of modern methods available, or unsatisfied with previous experiences using contraception. Taken together, this presents a promising opportunity to significantly reduce the current unmet need for family planning and to expand the market.</p>
+<p>Traditional approaches to promoting the take-up of family planning focus on demand generation activities, and supply-side activities, or a mixture of both. Demand generation can include mass media advertising, interpersonal communication, and development approaches such as conditional cash transfer programs. Supply-side interventions often include efforts to improve service access, quality, and cost. A systematic review of 63 published evaluations of family planning interventions concluded that development approaches and supply-side interventions had the most consistent effect on contraceptive use <span class="citation" data-cites="mwaikambo:2011">[5]</span>, but the overall quality of the evidence was low.</p>
+<p>The emergence of digital health tools such as short message service (SMS), interactive voice response, and smartphone applications have created new opportunities to strengthen health systems and promote behavior change <span class="citation" data-cites="labrique:2013 gurman:2012">[6,7]</span>, but the evidence base remains weak. As is the case in non-digital interventions <span class="citation" data-cites="mwaikambo:2011">[5]</span>, studies of digital health tools have found that it is easier to increase knowledge than it is to achieve behavior change <span class="citation" data-cites="johnson:2017">[8]</span>.</p>
+<p>This pilot study represents another effort to promote behavior change through the use of an SMS intervention. Women with an unmet need for family planning in Western Kenya were randomized to receive an encouragement to try an investigational digital health intervention. The objectives of the pilot study were to explore the feasibility of a full-scale trial—in particular the recruitment, encouragement, and follow-up data collection procedures—and to examine the preliminary effect of the intervention on the take-up of contraception.</p>
+<section id="references" class="level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-bongaarts:2012">
+<p>[1] Bongaarts J, Cleland J, Townsend JW, Bertrand JT, Gupta M. Family Planning Programs For the 21st Century. New York: Population Council; 2012.</p>
+</div>
+<div id="ref-fp2020:2017">
+<p>[2] FP2020. FP2020: The Way Ahead. FP2020; 2017.</p>
+</div>
+<div id="ref-kenyanationalbureauofstatistics:2015">
+<p>[3] Statistics KNB of, Health KM of, Council NAC, Institute KMR, Population NC for, Development, et al. Kenya Demographic and Health Survey 2014. Nairobi, Kenya: KNBS; 2015.</p>
+</div>
+<div id="ref-kenyanationalbureauofstatistics:2014">
+<p>[4] Statistics KNB of, Health KM of, Council NAC, Institute KMR, Population NC for, Development. Kenya Demographic and Health Survey 2014 Key Indicators. Nairobi, Kenya: Kenya National Bureau of Statistics; 2014.</p>
+</div>
+<div id="ref-mwaikambo:2011">
+<p>[5] Mwaikambo L, Speizer IS, Schurmann A, Morgan G, Fikree F. What works in family planning interventions: A systematic review of the evidence. Stud Fam Plann 2011;42:67–82.</p>
+</div>
+<div id="ref-labrique:2013">
+<p>[6] Labrique AB, Vasudevan L, Kochi E, Fabricant R, Mehl G. mHealth innovations as health system strengthening tools: 12 common applications and a visual framework. Global Health: Science and Practice 2013;1:160–71. doi:<a href="https://doi.org/10.9745/GHSP-D-13-00031">10.9745/GHSP-D-13-00031</a>.</p>
+</div>
+<div id="ref-gurman:2012">
+<p>[7] Gurman TA, Rubin SE, Roess AA. Effectiveness of mHealth Behavior Change Communication Interventions in Developing Countries: A Systematic Review of the Literature. Journal of Health Communication 2012;17:82–104. doi:<a href="https://doi.org/10.1080/10810730.2011.649160">10.1080/10810730.2011.649160</a>.</p>
+</div>
+<div id="ref-johnson:2017">
+<p>[8] Johnson D, Juras R, Riley P, Chatterji M, Sloane P, Choi SK, et al. A randomized controlled trial of the impact of a family planning mHealth service on knowledge and use of contraception. Contraception 2017;95:90–7. doi:<a href="https://doi.org/10.1016/j.contraception.2016.07.009">10.1016/j.contraception.2016.07.009</a>.</p>
+</div>
+</div>
+</section>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>In the 2014 Kenya DHS, 59.7% of women ages 15 to 49 were classified as married or in-union and 1.9% unmarried but sexually active. The current population of women ages 15 to 49 is approximately 11.8 million.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</section>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
