@@ -1,0 +1,37 @@
+name: Developing a digital marketplace for family planning--Results of a pilot randomized encouragement trial
+output_dir: '.'
+navbar:
+  title: Nivi RED
+  type: inverse
+  left:
+  - text: Home
+    href: index.html
+  - text: Overview
+    href: overview.html
+  - text: Team
+    href: team.html
+  - text: Papers
+    menu:
+    - text: Pilot
+      href: pilot.html
+  - text: Data and Code
+    href: "https://github.com/ericpgreen/nivi-red/tree/master/data%20and%20replication%20files"
+    icon: fa-external-link
+  right:
+  - icon: fa-envelope-o
+    href: mailto:eric.green@duke.edu
+  - icon: fa-github
+    href: https://github.com/ericpgreen/nivi-red
+output:
+  html_document:
+    theme: yeti
+    highlight: tango
+    fig_caption: yes
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+    css: styles.css
+    lib_dir: site_libs
+    self_contained: no
+
