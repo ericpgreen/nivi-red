@@ -11,6 +11,7 @@ To replicate papers and analyses:
 3. `manuscript.Rnw` will run `data and replication files/scripts/analysis.R`, which loads data from `data and replication files/input` and outputs to `data and replication files/output`.
 
 System requirements:
+
 1. R
 2. RStudio running knitr
 3. R packages, see `data and replication files/scripts/analysis.R` file for details
