@@ -7,8 +7,9 @@ Green, E.P. (2018). Nivi RED data repository. [![DOI](forthcoming)]()
 To replicate papers and analyses:
 
 1. Clone this repository.
-2. Open the `manuscript.Rnw` file in `data and replication files/JOURNAL` in RStudio. 
-3. `manuscript.Rnw` will run `data and replication files/scripts/analysis.R`, which loads data from `data and replication files/input` and outputs to `data and replication files/output`.
+2. Working directory should be the root of this repo (not `data and replication files`).
+3. Open the `manuscript.Rnw` file in `data and replication files/journal` in RStudio. 
+4. `manuscript.Rnw` will run `data and replication files/scripts/analysis.R`, which loads data from `data and replication files/input` and outputs to `data and replication files/output`.
 
 System requirements:
 
