@@ -15,6 +15,5 @@ System requirements:
 
 1. R
 2. `install.packages(c("tidyverse", "arm", "AER", "ivpack", "stargazer", "magrittr", "xtable"))`
-3. RStudio running knitr
-4. R packages, see `data and replication files/scripts/analysis.R` file for details
-5. LaTeX
+3. RStudio running `knitr`
+4. LaTeX
