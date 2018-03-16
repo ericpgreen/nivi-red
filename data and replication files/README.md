@@ -14,6 +14,7 @@ To replicate papers and analyses:
 System requirements:
 
 1. R
-2. RStudio running knitr
-3. R packages, see `data and replication files/scripts/analysis.R` file for details
-4. LaTeX
+2. `install.packages(c("tidyverse", "arm", "AER", "ivpack", "stargazer", "magrittr", "xtable"))`
+3. RStudio running knitr
+4. R packages, see `data and replication files/scripts/analysis.R` file for details
+5. LaTeX

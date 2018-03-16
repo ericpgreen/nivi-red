@@ -11,7 +11,6 @@
   library(arm)
   library(AER)
   library(ivpack)
-  library(ivprobit)
   library(stargazer)
   library(magrittr)
   library(xtable)
