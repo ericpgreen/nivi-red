@@ -1,5 +1,5 @@
 ---
-title: "Developing a digital marketplace for family planning--Results of a pilot randomized encouragement trial"
+title: "Developing a digital marketplace for family planning--Pilot randomized encouragement trial"
 output:
   html_document:
     toc_float: false

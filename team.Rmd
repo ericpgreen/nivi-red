@@ -5,6 +5,6 @@ output:
     toc_float: false
 ---
 
-This study was led by Dr. Eric Green. [Green](https://globalhealth.duke.edu/people/faculty/green-eric) is on the faculty at Duke University in the Duke Global Health Institute. Green is also is a Co-Founder of Nivi, Inc., holds an equity stake in the company, is a member of the company's Board of Directors, and serves as the company's Chief Scientist. Collaborators on this pilot trial included Arun Augustine (DGHI) and Dr. Violet Naanyu (Moi University).
+This study was led by Dr. Eric Green. [Green](https://globalhealth.duke.edu/people/faculty/green-eric) is on the faculty at Duke University in the Duke Global Health Institute. Green is also is a Co-Founder of Nivi, Inc., holds an equity stake in the company, is a member of the company's Board of Directors, and serves as the company's Chief Scientist. Collaborators on this pilot trial included Arun Augustine (DGHI), Dr. Violet Naanyu (Moi University), Anna-Karin Hess (DGHI), and Lulla Kiwinda (DGHI).
 
-The following individuals made important contributions to the study: Anna-Karin Hess, Lulla Kiwinda, Maximilla Chivini, Nancy Wairmu, Mercy Murungi, and Purity Nyangweso.
+The following individuals made important contributions to the study: Maximilla Chivini, Nancy Wairmu, Mercy Murungi, and Purity Nyangweso.

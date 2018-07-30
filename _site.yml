@@ -1,4 +1,4 @@
-name: Developing a digital marketplace for family planning--Results of a pilot randomized encouragement trial
+name: Developing a digital marketplace for family planning--Pilot randomized encouragement trial
 output_dir: '.'
 navbar:
   title: Nivi RED
@@ -12,7 +12,7 @@ navbar:
     href: team.html
   - text: Papers
     menu:
-    - text: Pilot
+    - text: JMIR
       href: pilot.html
   - text: Data and Code
     href: "https://github.com/ericpgreen/nivi-red/tree/master/data%20and%20replication%20files"

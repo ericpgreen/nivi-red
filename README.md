@@ -1,4 +1,4 @@
-# Developing a digital marketplace for family planning: Results of a pilot randomized encouragement trial
+# Developing a Digital Marketplace for Family Planning: Pilot Randomized Encouragement Trial
 
 All contents of this repository (and associated website) are licensed under the CC-BY license. To cite the data, please use:
 

@@ -1,5 +1,5 @@
 ---
-title: "Developing a digital marketplace for family planning--Results of a pilot randomized encouragement trial"
+title: "Developing a digital marketplace for family planning--Pilot randomized encouragement trial"
 output:
   html_document:
     toc_float: true
@@ -12,11 +12,11 @@ csl: vancouver.csl
 ```{r, echo=FALSE}
   tbl <- data.frame(Element=c("Paper Citation", 
                               "Journal Copy", 
-                              "Pre-Print", 
+                              "Registration",
                               "Data Citation"),
-                    Details=c("Green, E.P., Augustine, A., & Naanyu, V. (2018). Developing a digital marketplace for family planning: Results of a pilot randomized encouragement trial",
-                              "Under review",
-                              "Under review",
+                    Details=c("Green, E.P., Augustine, A., Naanyu, V., Hess, AK, & Kiwinda, L. (2018). Developing a digital marketplace for family planning: Pilot randomized encouragement trial. Journal of Medical Internet Research, 20(7), e10756. doi: http://dx.doi.org/10.2196/10756",
+                              "Journal of Medical Internet Research (open access)",
+                              "[ClinicalTrials.gov; NCT03224390](https://clinicaltrials.gov/ct2/show/NCT03224390)",
                               "Green, E.P. (2018). Nivi RED data repository. [![DOI](forthcoming)]()"))
 
 tbl %>%
@@ -28,10 +28,12 @@ tbl %>%
 
 # Summary
 
-Comging soon
+Family planning is an effective tool for preventing death among women who do not want to become pregnant and has been shown to improve newborn health outcomes, advance women's empowerment, and bring socioeconomic benefits through reductions in fertility and population growth. Yet among the populations that would benefit the most from family planning, take-up remains too low. The emergence of digital health tools has created new opportunities to strengthen health systems and promote behavior change. In this study, women with an unmet need for family planning in Western Kenya were randomized to receive an encouragement to try an automated investigational digital health intervention that promoted the take-up of family planning.
 
-# Key Take-Aways
+The objectives of the pilot study were to explore the feasibility of a full-scale trial—in particular the recruitment, encouragement, and follow-up data collection procedures—and to examine the preliminary effect of the intervention on the take-up of contraception. 
 
-Coming soon
+This pilot study tested the procedures for a randomized encouragement trial. We recruited 112 women with an unmet need for family planning from local markets in Western Kenya, conducted an eligibility screening, and randomized half of the women to receive an encouragement to try the investigational intervention. Four months after encouraging the treatment group, we conducted a follow-up survey with enrolled participants via text message. 
 
-# References
+The encouragement sent via text message to the treatment group led to differential rates of intervention take-up between the treatment and control groups, but take-up among the treatment group was lower than anticipated (33.9% vs 1.8% in the control group). Study attrition was also substantial. We obtained follow-up data from 44.6% of enrolled participants. Among those in the treatment group who tried the intervention, however, instrumental variables estimate of the Local Average Treatment Effect was an increase in the probability of contraceptive take-up of 41.0 percentage points (95% uncertainty interval -.03 to .85). 
+
+This randomized encouragement design and study protocol is feasible but requires modifications to the recruitment, encouragement, and follow-up data collection procedures.

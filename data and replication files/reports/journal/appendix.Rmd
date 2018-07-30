@@ -131,3 +131,9 @@ Observations & 112 & 112 & 112 \\
 \section{}
 
 \includepdf[pages={-}, angle=90]{../../resources/survey_instruments.pdf}
+
+\newpage
+
+\section{}
+
+\includepdf[pages={-}, angle=90]{../../resources/unmet_need.pdf}

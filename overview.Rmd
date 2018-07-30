@@ -1,5 +1,5 @@
 ---
-title: "Developing a digital marketplace for family planning--Results of a pilot randomized encouragement trial"
+title: "Developing a digital marketplace for family planning--Pilot randomized encouragement trial"
 output:
   html_document:
     toc: false
@@ -8,7 +8,7 @@ bibliography: refs.bib
 csl: vancouver.csl
 ---
 
-*In 2017-18, our team of researchers from Duke University and Moi University began a pilot study funded by the Duke Global Health Institute to explore the feasibility of a full-scale of [Nivi](https://www.nivi.io/), a digital marketplace for family planning. We created this study website to store all study-related products and data (licensed under the [CC-BY license](https://creativecommons.org/licenses/by/4.0/)). New material will be released as academic manuscripts enter production.*
+*In 2017-18, our team of researchers from Duke University and Moi University began a pilot study funded by the Duke Global Health Institute to explore the feasibility of a full-scale of [Nivi](https://www.nivi.io/), a digital marketplace for family planning. We created this study website to store all study-related products and data (licensed under the [CC-BY license](https://creativecommons.org/licenses/by/4.0/)).*
 
 * * * 
 
