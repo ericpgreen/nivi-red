@@ -15,7 +15,7 @@ csl: vancouver.csl
                               "Registration",
                               "Data Citation"),
                     Details=c("Green, E.P., Augustine, A., Naanyu, V., Hess, AK, & Kiwinda, L. (2018). Developing a digital marketplace for family planning: Pilot randomized encouragement trial. Journal of Medical Internet Research, 20(7), e10756. doi: http://dx.doi.org/10.2196/10756",
-                              "Journal of Medical Internet Research (open access)",
+                              "[Journal of Medical Internet Research](http://www.jmir.org/2018/7/e10756/) (open access)",
                               "[ClinicalTrials.gov; NCT03224390](https://clinicaltrials.gov/ct2/show/NCT03224390)",
                               "Green, E.P. (2018). Nivi RED data repository. [![DOI](forthcoming)]()"))
 
